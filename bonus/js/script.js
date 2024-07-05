@@ -2,13 +2,14 @@
 function createDivSquare(diff) { //NEW: added parameter
     let currentElement = document.createElement("div")
     currentElement.classList.add("square")
-    currentElement.classList.add(diff) //NEW parameter as second class
+    currentElement.classList.add(diff) //NEW: parameter as second class
     return currentElement;
 }
 
 // elements recovery
 const grid = document.getElementById("grid")
 const btn = document.getElementById("play")
+const level = document.getElementById("level") //NEW: select's recovery
 
 
 // click event on btn
