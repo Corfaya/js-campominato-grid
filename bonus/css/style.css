@@ -34,7 +34,6 @@ header {
 }
 
 .square {
-    width: calc(100% / 10);
     aspect-ratio: 1 / 1;
     display: flex;
     justify-content: center;
@@ -47,4 +46,16 @@ header {
 
 .clicked-azure {
     background-color: #069AF3;
+}
+
+.easy-squares {
+    width: calc(100% / 10);
+}
+
+.medium-squares {
+    width: calc(100% / 9);
+}
+
+.hard-squares {
+    width: calc(100% / 7)
 }
