@@ -15,7 +15,7 @@ btn.addEventListener("click", function() {
     for (let k = 0; k < 100; k++) {
         square = createDivSquare();
         square.addEventListener("click", function() {
-            
+            this.classList.add("clicked-azure")
         })
     }
 })
