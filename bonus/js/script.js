@@ -21,7 +21,14 @@ btn.addEventListener("click", function() {
     let levelSelection = level.value //value of the level selected
     let squareLength; //tot length of square
     let squareClass; //class to add
-     
+    if (levelSelection == 1) {
+        
+    } else if (levelSelection == 2) {
+        
+    } else if (levelSelection == 3) {
+        
+    }
+
 
     for (let k = 0; k < 100; k++) { //to replace end loop condition with squares length
         square = createDivSquare(); //parameter: class value???? to be tested
