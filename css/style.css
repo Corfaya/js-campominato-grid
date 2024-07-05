@@ -3,3 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#grid {
+    max-width: 1200px;
+    max-height: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    width: calc(100% / 10);
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(165, 213, 233);
+    border: 1px solid #000;
+    color: #000;
+    cursor: pointer;
+}
