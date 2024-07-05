@@ -11,11 +11,13 @@ const btn = document.getElementById("play")
 
 // click event on btn
 btn.addEventListener("click", function() {
+    grid.innerHTML = ""
     let square;
     for (let k = 0; k < 100; k++) {
         square = createDivSquare();
         square.addEventListener("click", function() {
             this.classList.add("clicked-azure")
+            console.log("Hai clickato su " + (k + 1))
         })
         square.innerText = k + 1
         grid.append(square)

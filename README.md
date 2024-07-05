@@ -20,5 +20,6 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
             - Aggiungo a ciascun elemento creato in "square" un evento click
                 - Nella callback function:
                     - Aggiungo all'elemento clickato la classe "clicked-azure"
+                    - Stampo su console "Hai cliccato su " + (indice + 1)
             - Aggiungo del testo a ogni elemento creato
             - Aggiungo in coda l'elemento creato all'interno del contenitore recuperato dal DOM
