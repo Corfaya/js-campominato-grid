@@ -14,6 +14,7 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 - Recupero dal DOM il button a cui voglio aggiungere il click event tramite id e lo salvo in una costante
 - Aggiungo l'evento click al bottone
     - Nella callback function:
+        - Svuoto la griglia
         - Dichiaro una variabile "square" per i quadrati
         - Eseguo un ciclo di 100 iterazioni per creare una griglia 10x10
             - Invoco la funzione di creazione dell'elemento HTML e la memorizzo nella variabile "square"
