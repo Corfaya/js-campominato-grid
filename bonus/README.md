@@ -12,6 +12,7 @@ Aggiungere una select accanto al bottone di generazione, che fornisca una scelta
         - Restituisco l'elemento HTML
 - Recupero dal DOM l'elemento entro cui creare gli altri elementi e lo salvo in una costante
 - Recupero dal DOM il button a cui voglio aggiungere il click event tramite id e lo salvo in una costante
+- (NEW) Recupero dal DOM il select in cui scegliere il livello di difficoltà
 - Aggiungo l'evento click al bottone
     - Nella callback function:
         - Dichiaro una variabile "square" per i quadrati
