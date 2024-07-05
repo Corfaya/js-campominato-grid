@@ -17,8 +17,14 @@ btn.addEventListener("click", function() {
     grid.innerHTML = ""
     let square;
 
+    //NEW variables
+    let levelSelection = level.value //value of the level selected
+    let squareLength; //tot length of square
+    let squareClass; //class to add
+     
+
     for (let k = 0; k < 100; k++) { //to replace end loop condition with squares length
-        square = createDivSquare(squareClass);
+        square = createDivSquare(); //parameter: class value???? to be tested
         square.addEventListener("click", function() {
             this.classList.add("clicked-azure")
             console.log("Hai clickato su " + (k + 1))
