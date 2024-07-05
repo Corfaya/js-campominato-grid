@@ -15,11 +15,16 @@ header {
     text-align: right;
 }
 
-#play {
+#play, #level {
     padding: 5px 30px;
     border: 1px solid #000;
     border-radius: 10px;
     cursor: pointer;
+}
+
+#level {
+    padding: 5px 10px;
+    background-color: #F0F0F0;
 }
 
 #grid {
