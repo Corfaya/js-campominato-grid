@@ -22,11 +22,14 @@ btn.addEventListener("click", function() {
     let squareLength; //tot length of square
     let squareClass; //class to add
     if (levelSelection == 1) {
-        
+        squareLength = 100
+        squareClass = "easy-squares"
     } else if (levelSelection == 2) {
-        
+        squareLength = 81
+        squareClass = "medium-squares"
     } else if (levelSelection == 3) {
-        
+        squareLength = 49
+        squareClass = "hard-squares"
     }
 
 
