@@ -8,3 +8,8 @@ function createDivSquare() {
 // elements recovery
 const grid = document.getElementById("grid")
 const btn = document.getElementById("play")
+
+// click event on btn
+btn.addEventListener("click", function() {
+    
+})
