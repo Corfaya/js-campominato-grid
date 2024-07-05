@@ -17,5 +17,6 @@ btn.addEventListener("click", function() {
         square.addEventListener("click", function() {
             this.classList.add("clicked-azure")
         })
+        grid.append(square)
     }
 })
