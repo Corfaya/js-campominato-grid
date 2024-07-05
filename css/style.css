@@ -39,3 +39,7 @@ header {
     color: #000;
     cursor: pointer;
 }
+
+.clicked-azure {
+    background-color: skyblue;
+}
