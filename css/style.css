@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+header {
+    background-color: #8CA2AB;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
 #grid {
     max-width: 1200px;
     max-height: 1200px;
