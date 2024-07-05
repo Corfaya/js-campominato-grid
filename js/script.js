@@ -4,3 +4,7 @@ function createDivSquare() {
     currentElement.classList.add("square")
     return currentElement;
 }
+
+// elements recovery
+const grid = document.getElementById("grid")
+const btn = document.getElementById("play")
