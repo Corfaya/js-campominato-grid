@@ -33,8 +33,8 @@ btn.addEventListener("click", function() {
     }
 
 
-    for (let k = 0; k < 100; k++) { //to replace end loop condition with squares length
-        square = createDivSquare(); //parameter: class value???? to be tested
+    for (let k = 0; k < squareLength; k++) { //NEW from 0 to squares' numbers
+        square = createDivSquare(squareClass); //parameter: class value
         square.addEventListener("click", function() {
             this.classList.add("clicked-azure")
             console.log("Hai clickato su " + (k + 1))
