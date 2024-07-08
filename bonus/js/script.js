@@ -5,9 +5,7 @@ const level = document.getElementById("level") //NEW: select's recovery
 
 
 // click event on btn
-btn.addEventListener("click", function() {
-   newGame()
-})
+btn.addEventListener("click", newGame)
 
 // Functions
 function createDivSquare(diff) { //NEW: added parameter
@@ -24,6 +22,7 @@ function newGame() {
     let levelSelection = level.value //value of the level selected
     let squareLength; //tot length of square
     let squareClass; //class to add
+
     if (levelSelection == 1) {
         squareLength = 100
         squareClass = "easy-squares"
@@ -34,6 +33,7 @@ function newGame() {
         squareLength = 49
         squareClass = "hard-squares"
     }
+
     for (let k = 0; k < squareLength; k++) { //NEW from 0 to squares' numbers
         square = createDivSquare(squareClass); //parameter: class value
         square.addEventListener("click", function() {

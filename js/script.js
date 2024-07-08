@@ -5,12 +5,7 @@ function createDivSquare() {
     return currentElement;
 }
 
-// elements recovery
-const grid = document.getElementById("grid")
-const btn = document.getElementById("play")
-
-// click event on btn
-btn.addEventListener("click", function() {
+function newGame() {
     grid.innerHTML = ""
     let square;
     for (let k = 0; k < 100; k++) {
@@ -22,4 +17,11 @@ btn.addEventListener("click", function() {
         square.innerText = k + 1
         grid.append(square)
     }
-})
+}
+
+// elements recovery
+const grid = document.getElementById("grid")
+const btn = document.getElementById("play")
+
+// click event on btn
+btn.addEventListener("click", newGame)
