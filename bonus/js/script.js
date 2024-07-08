@@ -1,11 +1,3 @@
-// Function
-function createDivSquare(diff) { //NEW: added parameter
-    let currentElement = document.createElement("div")
-    currentElement.classList.add("square")
-    currentElement.classList.add(diff) //NEW: parameter as second class
-    return currentElement;
-}
-
 // elements recovery
 const grid = document.getElementById("grid")
 const btn = document.getElementById("play")
@@ -14,9 +6,20 @@ const level = document.getElementById("level") //NEW: select's recovery
 
 // click event on btn
 btn.addEventListener("click", function() {
+   newGame()
+})
+
+// Functions
+function createDivSquare(diff) { //NEW: added parameter
+    let currentElement = document.createElement("div")
+    currentElement.classList.add("square")
+    currentElement.classList.add(diff) //NEW: parameter as second class
+    return currentElement;
+}
+
+function newGame() {
     grid.innerHTML = ""
     let square;
-
     //NEW variables
     let levelSelection = level.value //value of the level selected
     let squareLength; //tot length of square
@@ -31,8 +34,6 @@ btn.addEventListener("click", function() {
         squareLength = 49
         squareClass = "hard-squares"
     }
-
-
     for (let k = 0; k < squareLength; k++) { //NEW from 0 to squares' numbers
         square = createDivSquare(squareClass); //parameter: class value
         square.addEventListener("click", function() {
@@ -42,4 +43,4 @@ btn.addEventListener("click", function() {
         square.innerText = k + 1
         grid.append(square)
     }
-})
+}
